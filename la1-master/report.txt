@@ -1,0 +1,106 @@
+Score: 87
+
+failed edge cases of longerThan and toAstro, and didn't give correct single-term sin' approximation
+
+removeElems:
+  removeElems 8 []
+  removeElems 8 [8, 8]
+  removeElems 8 [6]
+  removeElems 'c' ['c', 'h', 'e', 'c', 'k']
+  removeElems 'c' ['h', 'e', 'k', 'c', 'c']
+
+Finished in 0.0012 seconds
+5 examples, 0 failures
+
+longerThan:
+  longerThan 3 []
+  longerThan 3 [[1], [2], [3]]
+  longerThan 0 [[], [1], [1, 2], [1, 2, 3]] FAILED [1]
+  longerThan 1 [[1], [1, 2], [1, 2, 3]]
+  longerThan 2 [['y', 'e', 'a', 'h'], ['y', 'e', 's'], ['n', 'o']]
+
+Failures:
+
+  ../la1b_test.hs:25: 
+  1) longerThan: longerThan 0 [[], [1], [1, 2], [1, 2, 3]]
+       expected: [[1],[1,2],[1,2,3]]
+        but got: [[],[1],[1,2],[1,2,3]]
+
+Randomized with seed 1874866591
+
+Finished in 0.0036 seconds
+5 examples, 1 failure
+
+printBar:
+  printBar []
+  printBar [1..10]
+  printBar "****"
+  printBar [(1,2,5), (3,6,1), (0,0,0)]
+
+Finished in 0.0012 seconds
+4 examples, 0 failures
+
+sin':
+  sin' 0 1
+  sin' (pi/6) 15
+  sin' pi/2 20
+  sin' 1 1 FAILED [1]
+  sin' pi 15 FAILED [2]
+
+Failures:
+
+  ../la1d_test.hs:28: 
+  1) sin': sin' 1 1
+       expected: 1.0
+        but got: 0.8333333333333334
+
+  ../la1d_test.hs:31: 
+  2) sin': sin' pi 15
+       predicate failed on: -5.479374499920862e-4
+
+Randomized with seed 1217758651
+
+Finished in 0.0029 seconds
+5 examples, 2 failures
+
+toAstro:
+  toAstro 1 1
+  toAstro 40 40 FAILED [1]
+  toAstro 10 30
+  toAstro 3 6
+
+Failures:
+
+  ../la1e_test.hs:21: 
+  1) toAstro: toAstro 40 40
+       uncaught exception: PatternMatchFail (LA1.hs:(35,1)-(47,73): Non-exhaustive patterns in function toAstro
+       )
+
+Randomized with seed 1807777293
+
+Finished in 0.0018 seconds
+4 examples, 1 failure
+
+
+-----------WARNING AND ERROR OUTPUTS BELOW-----------
+
+
+../la1a_test.hs:2:1: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.
+
+../la1b_test.hs:2:1: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.
+
+../la1c_test.hs:2:1: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.
+
+../la1d_test.hs:2:1: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.
+
+../la1e_test.hs:2:1: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.

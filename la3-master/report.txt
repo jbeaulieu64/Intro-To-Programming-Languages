@@ -1,0 +1,22 @@
+Score: 100
+
+
+-------LA3a tests-------
+
+6 facts declared
+4 rules declared
+2 conjunctions declared
+
+
+-------LA3b tests-------
+
+yes:connected(hamburg,berlin)
+yes:connected(hamburg,bremen)
+yes:connected(fulda,berlin)
+yes:connected(munich,stuttgart)
+
+
+-----------WARNING AND ERROR OUTPUTS BELOW-----------
+
+Warning: /Users/user/Documents/COMP3071i/student_work/la3/source/tmp.pl:32:
+	Singleton variables: [Path] [Path]

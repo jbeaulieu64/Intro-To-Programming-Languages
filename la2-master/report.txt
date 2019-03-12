@@ -1,0 +1,31 @@
+Score: 100
+
+addpoly:
+  addpoly [(1,1)] []
+  addpoly [(1,1)] [(1,1)]
+  addpoly [] []
+  addpoly [(2,2), [(1,1)] [(1,1)]
+  addpoly [(2,2), (1,1)] [(2,2)]
+  addpoly [(5,5), (4,4), (3,3)] [(2,2), (1,1), (1,0)]
+  addpoly [(5,5), (4,4), (3,0)] [(6,6), (-5,5), (-4,0)]
+  addpoly [(-5,5), (-4,4), (-3,0)] [(5,5), (4,4), (3,0)]
+
+Finished in 0.0023 seconds
+8 examples, 0 failures
+
+multpoly:
+  multpoly [(1,1)] []
+  multpoly [(1,1)] [(1,1)]
+  multpoly [] []
+  multpoly [(2,2), [(1,1)] [(1,1)]
+  multpoly [(2,2), (1,1)] [(2,2)]
+  multpoly [(5,5), (4,4), (3,3)] [(2,2), (1,1), (1,0)]
+  multpoly [(5,5), (4,4), (3,0)] [(6,6), (-5,5), (-4,0)]
+  multpoly [(-5,5), (-4,4), (-3,0)] [(5,5), (4,4), (3,0)]
+
+Finished in 0.0024 seconds
+8 examples, 0 failures
+
+
+-----------WARNING AND ERROR OUTPUTS BELOW-----------
+
